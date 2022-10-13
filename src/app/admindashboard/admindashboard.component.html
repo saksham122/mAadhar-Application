@@ -1,0 +1,12 @@
+<div>
+    <h2>Welcome to home Page admin {{user}}</h2>
+    <a routerLink="addUser">Add User</a>|
+    <a routerLink="findAllUser">View User</a>|
+    <a routerLink="findUserByuadhar">Search User</a>
+    <br>
+    <hr/>
+    <router-outlet></router-outlet>
+    <hr/>
+    <br/>
+    <input type="button" value="logout" (click)="logout()">
+</div>

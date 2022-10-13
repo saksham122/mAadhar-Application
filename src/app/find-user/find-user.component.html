@@ -1,0 +1,13 @@
+<div>
+    <label>Enter Uaadhar</label>
+            <input type="number" name="enter uadhar" [(ngModel)]="uadhar" /><br>
+
+            <span *ngFor="let u of users">
+                <div *ngIf>
+                <img src={{u.url}} width ="300px" height="300px">
+                <span>{{u.uname}} {{u.uadhar}} {{u.address}} {{u.emailid}} {{u.dob}} {{u.gender}} {{u.mnumber}}</span>
+                </div>
+            </span>
+            
+            
+</div>

@@ -1,0 +1,29 @@
+<div>
+    <h2>Welcome to user DashBoard {{user}}</h2>
+    <div>
+        <h2>Add User</h2>
+        <form [formGroup]="userRef" (ngSubmit)="storeUser()">
+            <label>Uanme</label>
+            <input type="text" formControlName="uname"><br>
+            <label>Address</label>
+            <input type="address" formControlName="address"><br>
+            <label>Emailid</label>
+            <input type="emailid" formControlName="emailid"><br>
+            <label>Mnumber</label>
+            <input type="mnumber" formControlName="mnumber"><br>
+            <label>Gender</label>
+            <input type="gender" formControlName="gender"><br>
+            <label>Dob</label>
+            <input type="dob" formControlName="dob"><br>
+            
+            <input type="submit" value="store User"><br>
+            <input type="reset" value="reset">
+            
+    
+        </form><br>
+        <span style="color:red ;">{{storeMsg}}</span>
+    </div>
+
+    <br/>
+    <input type="button" value="logout" (click)="logout()">
+</div>
